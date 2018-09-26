@@ -5,6 +5,7 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: path.resolve('./dist'),
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
@@ -19,6 +20,5 @@ module.exports = {
       }
     ]
   },
-  mode: 'production',
-  target: 'node'
+  mode: 'production'
 }

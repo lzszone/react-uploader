@@ -7,6 +7,7 @@ export default class Uploader extends Component {
       inputRef: createRef()
     }
     this.handleFileChange = this.handleFileChange.bind(this);
+    this.handleClick = this.handleClick.bind(this)
   }
 
   handleFileChange(e) {
@@ -24,12 +25,13 @@ export default class Uploader extends Component {
     const {
       handleFileChange,
       handleClick,
-      props: {style, children}
+      props: {style, children},
+      state: {inputRef}
     } = this;
 
     return (
       <div onClick={handleClick} style={style} >
-        <input type="file" hidden onchange={handleFileChange} />
+        <input type="file" hidden onChange={handleFileChange} ref={inputRef} />
         {children}
       </div>
     )
