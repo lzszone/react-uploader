@@ -31,7 +31,7 @@ export default class Uploader extends Component {
 
     return (
       <div onClick={handleClick} style={style} >
-        <input type="file" hidden onChange={handleFileChange} ref={inputRef} />
+        <input type="file" hidden onChange={handleFileChange} ref={inputRef} multiple />
         {children}
       </div>
     )
