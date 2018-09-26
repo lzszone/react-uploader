@@ -1,6 +1,6 @@
 {
   "name": "@urfri/react-uploader",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "An easy, extendable react uploader.",
   "main": "dist/index.js",
   "scripts": {
