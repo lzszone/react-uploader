@@ -12,7 +12,7 @@ export default class Uploader extends Component {
 
   handleFileChange(e) {
     const {onFileOpened} = this.props;
-    onFileOpened(e.target.filse)
+    onFileOpened(e.target.files)
   }
 
   handleClick(e) {
